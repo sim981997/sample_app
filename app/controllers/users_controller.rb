@@ -11,6 +11,7 @@ class UsersController < ApplicationController
   def create
 @user = User.new(user_params) # Not the final implementation!
 if @user.save
+	log_in @user
 # Handle a successful save.
 flash[:success] = "Welcome to BEER ONLINE!"
   redirect_to @user
@@ -24,5 +25,6 @@ def user_params
 params.require(:user).permit(:name, :email, :password,
 :password_confirmation)
 end
+
 
 end
