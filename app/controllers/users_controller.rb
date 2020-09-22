@@ -4,7 +4,13 @@ class UsersController < ApplicationController
   def show
    @user = User.find(params[:id])
 
+
+  
+  def show
+   @user = User.find(params[:id])
+
   def new
+
 
   end
 
@@ -15,6 +21,9 @@ class UsersController < ApplicationController
   def create
 @user = User.new(user_params) # Not the final implementation!
 if @user.save
+
+	log_in @user
+
 # Handle a successful save.
 flash[:success] = "Welcome to BEER ONLINE!"
   redirect_to @user
