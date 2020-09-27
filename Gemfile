@@ -14,8 +14,6 @@ gem 'mini_magick', '4.9.5'
 
 gem 'active_storage_validations', '0.8.2'
 
-gem 'active_storage_validations', '0.8.2'
-
 gem "bcrypt", "3.1.13"
 
 gem 'faker', '2.1.2'
