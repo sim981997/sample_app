@@ -62,6 +62,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (9.8.6.2)
       execjs
+
     aws-eventstream (1.1.0)
     aws-partitions (1.376.0)
     aws-sdk-core (3.108.0)
@@ -80,6 +81,9 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.13)
     bcrypt (3.1.13-java)
+
+    bcrypt (3.1.13)
+
     bindex (0.8.1)
     bootsnap (1.4.8)
       msgpack (~> 1.0)
@@ -263,8 +267,10 @@ PLATFORMS
   x86-mswin32
 
 DEPENDENCIES
+
   active_storage_validations (= 0.8.2)
   aws-sdk-s3 (= 1.46.0)
+
   bcrypt (= 3.1.13)
   bootsnap (>= 1.4.2)
   bootstrap-sass (= 3.4.1)
