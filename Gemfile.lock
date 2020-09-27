@@ -80,6 +80,9 @@ GEM
       aws-eventstream (~> 1, >= 1.0.2)
     bcrypt (3.1.13)
     bcrypt (3.1.13-java)
+
+    bcrypt (3.1.13)
+
     bindex (0.8.1)
     bootsnap (1.4.8)
       msgpack (~> 1.0)
@@ -265,6 +268,11 @@ PLATFORMS
 DEPENDENCIES
   active_storage_validations (= 0.8.2)
   aws-sdk-s3 (= 1.46.0)
+
+
+  active_storage_validations (= 0.8.2)
+  aws-sdk-s3 (= 1.46.0)
+
   bcrypt (= 3.1.13)
   bootsnap (>= 1.4.2)
   bootstrap-sass (= 3.4.1)
