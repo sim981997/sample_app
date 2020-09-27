@@ -14,6 +14,7 @@ before_action :admin_user, only: :destroy
   end
 
 
+
   
   def show
    @user = User.find(params[:id])
@@ -36,9 +37,11 @@ before_action :admin_user, only: :destroy
 @user = User.new(user_params) # Not the final implementation!
 if @user.save
 
+
   @user.send_activation_email
   flash[:info] = "Please check your email to activate your account."
   redirect_to root_url
+
 
 
 
@@ -49,8 +52,8 @@ flash[:success] = "Welcome to BEER ONLINE!"
   redirect_to @user
 
 else
+
 render 'new'
-end
 end
 
 def edit
@@ -88,6 +91,7 @@ end
   def admin_user
    redirect_to(root_url) unless current_user.admin?
   end
+
 
   private
 def user_params
